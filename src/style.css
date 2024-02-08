@@ -1,0 +1,39 @@
+main,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+
+#crosshair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  /* border: 2px solid #fff; */
+  box-sizing: content-box;
+}
+#crosshair:before,
+#crosshair:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+}
+#crosshair:before {
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  transform: translateY(-50%);
+}
+#crosshair:after {
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: translateX(-50%);
+}
